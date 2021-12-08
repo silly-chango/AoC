@@ -7,6 +7,7 @@ def open_file(txt):
         if c < int(i):
             count+=1
         c = int(i)
+    file_object.close()
     return count - 1
     # we subtract 1 due to the first value not counting as it is 
     # the starting valuee
@@ -16,4 +17,5 @@ def main():
 
 if __name__ == '__main__':
     main()
+    
 
